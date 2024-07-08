@@ -65,7 +65,7 @@ const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState); // Khởi tạo useReducer với reducer và trạng thái ban đầu
 
   useEffect(() => {
-    console.log(state.tasks); // Ghi log danh sách công việc mỗi khi nó thay đổi
+    console.log(state.tasks); //Ghi log danh sách công việc mỗi khi nó thay đổi
   }, [state.tasks]);
 
   const addTask = () => {
